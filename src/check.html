@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Verify app</title>
+
+<!-- Scripts ---->
+<script src="js/buffer.js"></script>
+<script src="js/ipfsLogic.js"></script>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="https://unpkg.com/ipfs-api@9.0.0/dist/index.js" integrity="sha384-5bXRcW9kyxxnSMbOoHzraqa7Z0PQWIao+cgeg327zit1hz5LZCEbIMx/LWKPReuB" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
+<!--<script src ="js/merkleHash.js"></script>-->
+
+</head>
+
+<body>
+
+<div class="checkDetails">
+	
+	<input id="caseId"  placeholder="Enter case number" type="text" /></br>
+	
+         <input type="button" value="Retrieve"  class="retrieveDetails"/>
+        
+	
+	
+</div>
+
+<div class="details">
+        Location: <span id="loc"></span></br></br>
+	<span>IpfsHash: <span id="ipfs"></span></br></br>
+	<span>SHA256 Hash: <span id="allhash"></span></br></br>
+</div>
+</br>
+</br>
+<script>
+$(document).ready(function() {
+   $('.details').hide();
+});
+
+</script>
+
+
+
+   
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>	
