@@ -22,9 +22,8 @@ function upload() {
       
       detailHash = sha256(caseno+location+hash);
       
-
-
-      document.getElementById("ipfsHash").innerHTML = detailHash;
+      if (detailHash != '')
+      	document.getElementById("ipfsHash").innerHTML = 'Hash Generated';
     });
   }
   const photo = document.getElementById("photo");
