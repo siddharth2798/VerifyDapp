@@ -12,15 +12,39 @@
 <script src="https://unpkg.com/ipfs-api@9.0.0/dist/index.js" integrity="sha384-5bXRcW9kyxxnSMbOoHzraqa7Z0PQWIao+cgeg327zit1hz5LZCEbIMx/LWKPReuB" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--<script src ="js/merkleHash.js"></script>-->
 
 </head>
 
 <body>
+<div clas="outerDiv">
+<div class="leftDiv">
+
+<img src="img/icon.png">
+<p id="text">Tamper proof evidence store</p>
+</div>
+<div class="rightDiv">
+
+<div class="navbar">
+
+ <ul>
+ <span class="leftnavbar">
+
+
+  <li><a href="index.html">Add Details</a></li>
+  </span>
+  <span class="rightnavbar">
+  <li><a href="check.html">Get Details</a></li>
+ </ul> 
+ 
+</span>
+</div>
+
 
 <div class="checkDetails">
 	
-	<input id="caseId"  placeholder="Enter case number" type="text" /></br>
+	Case ID: <input id="caseId"  placeholder="Enter case number" class="details" type="text" /></br>
 	
          <input type="button" value="Retrieve"  class="retrieveDetails"/>
         
@@ -28,17 +52,19 @@
 	
 </div>
 
-<div class="details">
-        Case No: <span id="caseID"></span></br></br>
-        Location: <span id="loc"></span></br></br>
-	IpfsHash: <span id="ipfs"></span></br></br>
-	SHA256 Hash: <span id="allhash"></span></br></br>
+<div class="showdetails">
+        Case No: <span id="caseID" class="details"></span></br></br>
+        Location: <span id="loc" class="details"></span></br></br>
+	IpfsHash: <span id="ipfs" class="details"></span></br></br>
+	SHA256 Hash: <span id="allhash" class="details"></span></br></br>
+</div>
+</div>
 </div>
 </br>
 </br>
 <script>
 $(document).ready(function() {
-   $('.details').hide();
+   $('.showdetails').hide();
 });
 
 </script>

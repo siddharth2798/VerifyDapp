@@ -1,0 +1,79 @@
+.outerDiv
+			{
+				background-color: #006699;
+				color: #fff;
+				height: 98vh;
+				width: 100vw;
+				margin: 0px auto;
+				padding: 5px;
+			}
+			.leftDiv
+			{
+				background-color: #2e3841;
+				color: #000;
+				height: 98vh;
+				width: 30%;
+				float: left;
+			}
+			.rightDiv
+			{
+				background-color: #efefef;
+				color: #000;
+				height: 98vh;
+				width: 70%;
+				float: right;
+				text-align:center;
+			}	
+			
+img {width : 80%;
+margin-top:113px;
+margin-left:30px;
+
+}
+
+#text{
+
+color:#ffffff;
+margin-left:62px;
+margin-bottom:40px;
+
+
+}
+
+.forms, .checkDetails{
+
+padding-top:10%;
+
+}
+
+.details{
+
+margin:1em;
+}
+
+.detailsSubmit,.retrieveDetails{
+background-color:#2e3841;
+color: #ffffff;
+width:80px;
+height:27px;
+
+
+}
+
+li {
+  display: inline;
+  margin:10em;
+}
+
+.navbar{
+display:inline;
+
+}
+
+.showDetails{
+margin-top:10em;
+
+}
+
+
+

@@ -3,9 +3,12 @@
 <head>
 <title>Verify app</title>
 
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
 <!-- Scripts ---->
 <script src="js/buffer.js"></script>
 <script src="js/ipfsLogic.js"></script>
+
 
 <script src="https://unpkg.com/ipfs-api@9.0.0/dist/index.js" integrity="sha384-5bXRcW9kyxxnSMbOoHzraqa7Z0PQWIao+cgeg327zit1hz5LZCEbIMx/LWKPReuB" crossorigin="anonymous"></script>
 
@@ -15,14 +18,38 @@
 </head>
 
 <body>
+<div clas="outerDiv">
+<div class="leftDiv">
 
-<div>
+<img src="img/icon.png">
+<p id="text">Tamper proof evidence store</p>
+</div>
+<div class="rightDiv">
+<div class="navbar">
+
+ <ul>
+ <span class="leftnavbar">
+
+
+  <li><a href="index.html">Add Details</a></li>
+  </span>
+  <span class="rightnavbar">
+  <li><a href="check.html">Get Details</a></li>
+ </ul> 
+
+
+
+</span>
+</div>
+
+
+<div class="forms">
 	
-	<input id="caseno" class="details" placeholder="Enter case number" type="text" /></br>
-	<input id="location" class="details" placeholder="Enter crime location" type="text" /></br>
+	Case ID: <input id="caseno" class="details" placeholder="Enter case number" type="text" /></br>
+	Location: <input id="location" class="details" placeholder="Enter crime location" type="text" /></br>
 	</br></br>
 	 <input type="file" name="photo" id="photo">
-         <button type="button" onclick="upload()">Calculate Hash</button><p id="ipfsHash"></p>
+         <span class="message"><button type="button" onclick="upload()">Calculate Hash</button><p id="ipfsHash"></p></span>
          </br></br>
          <button type="submit" class="detailsSubmit Submit">Add</button>
          
@@ -30,6 +57,8 @@
 	<p id="results"><p>
 </br>
 </br>
+</div>
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
